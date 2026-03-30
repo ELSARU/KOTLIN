@@ -1,0 +1,333 @@
+// single-line comment 
+
+/*
+ * MULTI-LINE Comment
+ * 
+ * */
+
+
+/*
+ * VARIABLES:
+ * - mutable -> you can change it
+ * - immutable -> CONSTANT => you can never change once assigned
+ * Parts of variable: 
+ * - key word (var, val)
+ * - variable name
+ * - data type
+ * - assignment operator
+ * - value to be referenced 
+ * 
+ * */
+
+ var firstName:String = "John Doe" // mutable variable
+ val dob:Int = 2010 // immutable variable (CONSTANTS)
+ var nickName:String? = null //mutable variable , nullability(?)
+ var age  = 10 // type inference
+ 
+ /*
+  * DATA TYPES: 
+  * - Numbers:integer, long, float, double
+  * - Strings: ""
+  * - Character: ''
+  * - boolean
+  * */
+ 
+ //  Numbers: 
+ var year:Int = 2026 // integer
+ var internWage:Int = 100_000 
+ var juniorWage:Int = 1_000_000
+ var seniorWage:Long = 1_000_000_000_000L
+ 
+ var latKiproCenter:Float = -1.2345678f
+ var lngKiproCenter:Float = 36.2897654f
+ var latSaritCenter:Double = -1.2345678234466354654
+ var lngSaritCenter:Double = 36.2897654234466354654
+ 
+ //Strings & Characters
+ var nameOfPlace:String = "Kipro Center" // string
+ // var firstCharOfNameOfPlace:Char = 'K'
+ 
+ // boolean: true or false
+ var isDoorOpen:Boolean = true
+ var isWindowOpen:Boolean = false
+ 
+ /*
+  * CONDITIONAL STATEMENTS: 
+  * - if...else
+  * - if...else if...else
+  * - when...
+  * */
+ 
+ /*
+  * PARAMETERIZED
+  * NON-PARAMETERIZED 
+  * 
+  * */
+ 
+ //  defining the function
+ fun greeting(){println("Welcome to Safari LAB!")}
+ 
+ fun calculateAge(dob:Int, currentYear:Int):Int 
+ {
+     return currentYear - dob
+ }
+ 
+ var amount:Int = 1000
+ 
+ fun addOneAmount(amountValue:Int){
+     amount += amountValue
+     println(amount)
+ }
+ 
+ 
+ fun main() {    
+ //     greeting() // calling the function
+ //     println(calculateAge(2010, 2026))
+     addOneAmount(200)
+     addOneAmount(1200)
+     
+     
+     
+     
+     
+    /*
+     *  age = 9
+     
+     // if...else
+     if(age<10){
+             println("Under-age")
+     }else{
+         println("Teenager")
+     }
+     var output = if(age<10){"**UnderAge**"}else{"Teen"}
+     
+     // if...else if...else
+     age =50
+     
+     if(age<18){
+         println("Oops! you are under 18!")
+     }else if(age <=20 ){
+         println("Ok, we can talk about driving!")
+     }else if(age<=50){
+         println("You should be driving by now!")
+     }else{
+         println("idk!")
+     }
+     println("===============================\n")
+     
+     // when ..    
+     var color:Int =1; 
+     color = 0
+     when (color){
+         1 -> println("primary")
+         2 -> println("secondary")
+         3 -> println("auxilliary")
+         else -> println("please add that color category")
+     } */
+ 
+     
+ //     var childAge:Int = 9
+ //     var teenagerAge:Int = 13
+ //     var adultAge:Int = 18
+ //     var adultMiddleAge:Int = 35
+ //     var oldMiddleAge:Int = 80
+        
+     
+     
+     
+     
+     
+     
+     
+     
+ // 	println(output)
+   
+ //     firstName = "Peter Parker"
+ //     dob = 2015 // this will give you a reassignment error 
+ //     age = "ten years old"
+ //     println(age)
+ //     println(firstName)
+ //     println(dob)
+ 
+ }
+ /*
+ * Variables: 
+ * 	- mutable: they are dynamic in nature: => var
+ * 	- immutable: CONSTANTS => val
+ * 
+ * Parts Of variable: 
+ * - key word (var or val)
+ * - variable name 
+ * - Datatype
+ * - value
+ * 
+ * Data Types:
+ * - Numbers: Int, Long, Float, Double
+ * - Strings: ""
+ * - Characters: ''
+ * - Boolean: true or false
+ * */
+
+
+/*
+ * FUNCTION: 
+ *  - does one core task ( fetch data, format texts etc)
+ * Types:
+ * - paramterized: 
+ * - non-parameterized:
+ * 
+ * Parts:
+ * - key word
+ * - function name
+ * - parenthesis
+ * - data type (use this when you are returning a value)
+ * - curly braces
+ * 
+ * */
+
+ var name:String = "John Doe"
+
+ // function definition
+ fun greetings(){
+     println("Welcome to SafariLAB!")
+ }
+ 
+ // parametrized function ( the parameters are automatically set to constants)
+ fun afternoonGreetings(name:String){
+ //     name = "John Kamau" // returns an
+ //      error since parameters are constants in natures 
+     println("GoodAfternoon $name")
+ }
+ 
+ fun getSumOfNumbers(num1:Int, num2:Int):Int{
+     return num1+num2    
+ }
+ 
+ fun welcomeMessage(){
+     println("Welcome home!")
+ }
+ 
+ fun condition(i:Int) = i<=10 
+ 
+ // "==============================================="
+ 
+ fun addOperation(num1:Int , num2:Int):Int{
+         return num1 + num2 
+ }
+ 
+ fun multiplyOperation(num1:Int, num2:Float){
+     println(num1 * num2)
+ } 
+ 
+ fun toggleLights(lightsOn:String){
+     if(lightsOn =="ON" ){
+         println("Switching lights OFF")
+     }else{
+         println("Switching lights ON")        
+     }
+ }
+ 
+ 
+ /*
+  * LOOPS:
+  * - while
+  * - do...while
+  * - for..in (list of ITEMS and RANGE) 
+  * 
+  * parts:
+  * - statements
+  * - conditions
+  * 
+  * */
+ 
+  var start:Int = 10 
+  var fruits = listOf("apple","mango", "banana","pear")
+  
+  
+  
+ // statements & expressions
+ fun main() {    
+     
+     while(start< 20){
+ //         println(start)
+         start++
+     }
+     start = 0
+     
+     do{
+ //         println("Hello World #$start")
+         start+=1
+     } while(start<=10)
+     
+     
+     
+     for (fruit in fruits){
+ //         println(fruit)
+     }
+     
+     for (number in 1..10){
+ //         print("$number ")
+     }
+     
+     println()
+     
+     for (number in 1 until 10){
+ //         print("$number ")
+     }
+     
+     println()
+     
+     for (number in 10 downTo -10){
+ //         print("$number ")
+     }
+     
+     
+     for (letter in 'a'..'z'){
+         print(letter)
+     }
+     println()
+     
+     for (letter in "jnskhm"){
+         print(letter)
+     }
+     println()
+        for (letter in "jnskhm"){
+         print(letter +1)
+     }
+      println()
+      
+          for (letter in "derrick"){
+             print(letter)
+         }
+ 
+     
+     
+     
+     
+     
+     
+     
+     
+ //     println(addOperation(10,12))
+ //     println(multiplyOperation(12,12.12f))
+ //     println(Integer.MAX_VALUE)
+ //     println(Long.MAX_VALUE)
+ //     println("===================")
+ //     println(Float.MAX_VALUE)
+ //     println(Double.MAX_VALUE)  
+ //    greetings() // calling the function
+ //    afternoonGreetings("John Doe")
+ //    println(getSumOfNumbers(12,18))
+     
+ //    if(condition(10)) {
+ //        println("This is 10")
+ //    }else{
+ //        println("This is not 10")
+ //    }
+    
+ //    println(name)
+ //    name = 12
+ //    println(name)
+ //    welcomeMessage() // call the function
+ }
+ 
