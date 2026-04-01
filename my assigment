@@ -1,0 +1,86 @@
+/**
+ * you can edit, run and share this code
+ * play.kotlinlang.org
+ */
+
+
+
+
+fun main(){
+    
+var studentName:String = "Pascal Protus"   
+val studentId:Int = 2024001
+var GPA:Float = 3.75f
+val isEnrolled:Boolean = true
+val middleInitial:String = "J"
+
+ 
+    
+var studentDetails:String = ("$studentName $middleInitial. (ID: $studentId has a $GPA and is enrolled: $isEnrolled")
+var phoneNumber:String? = null
+
+    println(studentName)
+    println(studentId)
+    println(GPA)
+    println(isEnrolled)
+    println(middleInitial)
+    
+    println(studentDetails)
+    println(phoneNumber)
+    displayMenu() 
+    getGrade(score:Int)
+}
+
+
+
+fun displayMenu(){
+  
+println("View profile")
+println("Edit setting")
+println("Logout")
+}
+
+
+fun calculateDiscount(){
+    
+    
+    
+    
+    
+    
+    
+fun getGrade(score:Int){
+    score = 100  
+    
+if(score >= 80) {
+                  println("A")
+}else if(score  >= 65){
+                  println("B")
+}else if (score >= 50{
+                  println("C")
+}else if (score >= 35 {
+                  println("D")
+}else {  
+                  println("F")
+    
+}                  
+                  
+}                  
+             
+            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
